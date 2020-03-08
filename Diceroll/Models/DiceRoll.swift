@@ -8,8 +8,18 @@
 
 import Foundation
 
-struct DiceThrow {
+struct DiceRoll {
     var date: Date
-    var choosenDice: String
+    var dice: Dice
     var result: Int
+    var quantity: Int
+}
+
+enum Dice: String {
+    case d4
+    case d6
+    case d8
+    case d10
+    case d12
+    case d20
 }

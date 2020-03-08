@@ -10,15 +10,17 @@ import UIKit
 
 class DiceView: UIView {
     var lblDiceName: UILabel!
-    var imgViewDice: UIImageView!
-    var txtField: UITextField!
-    var stepper: UIStepper!
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupView()
+    let txtField = UITextField()
+    let diceButton = UIButton()
+    var dice: Dice = .d20
+    
+    init(dice: Dice, selector: Selector, target: Any) {
+        super.init(frame: CGRect())
+        self.dice = dice
+        diceButton.addTarget(target, action: selector, for: .touchUpInside)
+        setupView()
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,52 +35,59 @@ class DiceView: UIView {
         clipsToBounds = true
         
         lblDiceName = UILabel()
-        lblDiceName.text = "d20"
+        lblDiceName.text = dice.rawValue
         lblDiceName.font = lblDiceName.font.withSize(12)
         
-        imgViewDice = UIImageView(image: UIImage(named: "d2020"))
+        setButtonTag()
+        diceButton.setImage(UIImage(named: dice.rawValue), for: .normal)
         
-        txtField = UITextField()
         txtField.placeholder = "0"
         txtField.textAlignment = .center
-        
-        stepper = UIStepper()
-        stepper.autorepeat = true
-        stepper.maximumValue = 50
+        txtField.keyboardType = .numberPad
         
         lblDiceName.translatesAutoresizingMaskIntoConstraints = false
-        imgViewDice.translatesAutoresizingMaskIntoConstraints = false
+        diceButton.translatesAutoresizingMaskIntoConstraints = false
         txtField.translatesAutoresizingMaskIntoConstraints = false
-        stepper.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(lblDiceName)
-        addSubview(imgViewDice)
+        addSubview(diceButton)
         addSubview(txtField)
-        addSubview(stepper)
         
         constraintsInit()
-        
-        // Add a function handler to be called when UIStepper value changes
-        // myUIStepper.addTarget(self, action: #selector(ViewController.stepperValueChanged(_:)), for: .valueChanged)
     }
     
     private func constraintsInit() {
         NSLayoutConstraint.activate([
             widthAnchor.constraint(equalToConstant: 100),
             lblDiceName.centerXAnchor.constraint(equalTo: centerXAnchor),
-            lblDiceName.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            lblDiceName.topAnchor.constraint(equalTo: topAnchor, constant: 2.5),
             lblDiceName.heightAnchor.constraint(equalToConstant: 20),
-            imgViewDice.topAnchor.constraint(equalTo: lblDiceName.bottomAnchor, constant: 5),
-            imgViewDice.widthAnchor.constraint(equalToConstant: 50),
-            imgViewDice.heightAnchor.constraint(equalToConstant: 50),
-            imgViewDice.centerXAnchor.constraint(equalTo: centerXAnchor),
-            txtField.topAnchor.constraint(equalTo: imgViewDice.bottomAnchor, constant: 5),
+            diceButton.topAnchor.constraint(equalTo: lblDiceName.bottomAnchor),
+            diceButton.widthAnchor.constraint(equalToConstant: 50),
+            diceButton.heightAnchor.constraint(equalToConstant: 50),
+            diceButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            txtField.topAnchor.constraint(equalTo: diceButton.bottomAnchor, constant: 5),
             txtField.trailingAnchor.constraint(equalTo: trailingAnchor),
             txtField.leadingAnchor.constraint(equalTo: leadingAnchor),
-//            txtField.bottomAnchor.constraint(equalTo: bottomAnchor),
-            txtField.heightAnchor.constraint(equalToConstant: 20),
-            stepper.topAnchor.constraint(equalTo: txtField.bottomAnchor),
-            stepper.bottomAnchor.constraint(equalTo: bottomAnchor)
+            txtField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2.5),
+            txtField.heightAnchor.constraint(equalToConstant: 20)
         ])
+    }
+    
+    private func setButtonTag() {
+        switch dice {
+        case .d4:
+            diceButton.tag = 4
+        case .d6:
+            diceButton.tag = 6
+        case .d8:
+            diceButton.tag = 8
+        case .d10:
+            diceButton.tag = 10
+        case .d12:
+            diceButton.tag = 12
+        case .d20:
+            diceButton.tag = 20
+        }
     }
 }

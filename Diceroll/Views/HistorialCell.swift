@@ -9,7 +9,7 @@
 import UIKit
 
 class HistorialCell: UITableViewCell {
-    var diceThrow: DiceThrow! {
+    var diceThrow: DiceRoll! {
         didSet {
             setupCell()
         }
