@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4A501424084B4200793F25 /* DiceThrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A501324084B4200793F25 /* DiceThrow.swift */; };
+		3A4A501724084BB000793F25 /* HistorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A501624084BB000793F25 /* HistorialCell.swift */; };
+		3A4A501924084FCB00793F25 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A501824084FCB00793F25 /* DiceView.swift */; };
+		3AD75B5024059AD900325264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B4F24059AD900325264 /* AppDelegate.swift */; };
+		3AD75B5224059AD900325264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B5124059AD900325264 /* SceneDelegate.swift */; };
+		3AD75B5424059AD900325264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B5324059AD900325264 /* ViewController.swift */; };
+		3AD75B5924059ADC00325264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD75B5824059ADC00325264 /* Assets.xcassets */; };
+		3AD75B5C24059ADC00325264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD75B5A24059ADC00325264 /* LaunchScreen.storyboard */; };
+		3AD75B6724059ADC00325264 /* DicerollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B6624059ADC00325264 /* DicerollTests.swift */; };
+		3AD75B722405AB4F00325264 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B712405AB4F00325264 /* TableManager.swift */; };
+		3AD75B762405AF6E00325264 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B752405AF6E00325264 /* TabBarController.swift */; };
+		3AD75B782405AFF500325264 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B772405AFF500325264 /* HistoryViewController.swift */; };
+		470330F7F2B346E69C64E15E /* Pods_Diceroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5FB6255AE993DD67FA5AB /* Pods_Diceroll.framework */; };
+		8E2BD6F71E0C30BF5C382836 /* Pods_DicerollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD75B6324059ADC00325264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AD75B4424059AD900325264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AD75B4B24059AD900325264;
+			remoteInfo = Diceroll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02881CEA806E8DCC14FE80E4 /* Pods-DicerollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicerollTests.debug.xcconfig"; path = "Target Support Files/Pods-DicerollTests/Pods-DicerollTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DicerollTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204BC76C48E056E6846163BD /* Pods-Diceroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diceroll.debug.xcconfig"; path = "Target Support Files/Pods-Diceroll/Pods-Diceroll.debug.xcconfig"; sourceTree = "<group>"; };
+		2F4947FF95BD3A5CCD07854A /* Pods-DicerollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicerollTests.release.xcconfig"; path = "Target Support Files/Pods-DicerollTests/Pods-DicerollTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A4A501324084B4200793F25 /* DiceThrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceThrow.swift; sourceTree = "<group>"; };
+		3A4A501624084BB000793F25 /* HistorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialCell.swift; sourceTree = "<group>"; };
+		3A4A501824084FCB00793F25 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		3AD75B4C24059AD900325264 /* Diceroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diceroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD75B4F24059AD900325264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AD75B5124059AD900325264 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3AD75B5324059AD900325264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AD75B5824059ADC00325264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AD75B5B24059ADC00325264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AD75B5D24059ADC00325264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD75B6224059ADC00325264 /* DicerollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DicerollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD75B6624059ADC00325264 /* DicerollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicerollTests.swift; sourceTree = "<group>"; };
+		3AD75B6824059ADC00325264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD75B712405AB4F00325264 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		3AD75B752405AF6E00325264 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3AD75B772405AFF500325264 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		946AC34257CD946675259DF7 /* Pods-Diceroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diceroll.release.xcconfig"; path = "Target Support Files/Pods-Diceroll/Pods-Diceroll.release.xcconfig"; sourceTree = "<group>"; };
+		E1F5FB6255AE993DD67FA5AB /* Pods_Diceroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diceroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AD75B4924059AD900325264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470330F7F2B346E69C64E15E /* Pods_Diceroll.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD75B5F24059ADC00325264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2BD6F71E0C30BF5C382836 /* Pods_DicerollTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21E2997EAAB26E4983BEAB15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				204BC76C48E056E6846163BD /* Pods-Diceroll.debug.xcconfig */,
+				946AC34257CD946675259DF7 /* Pods-Diceroll.release.xcconfig */,
+				02881CEA806E8DCC14FE80E4 /* Pods-DicerollTests.debug.xcconfig */,
+				2F4947FF95BD3A5CCD07854A /* Pods-DicerollTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3A4A501224084B3500793F25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A501324084B4200793F25 /* DiceThrow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A4A501524084B8500793F25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A501624084BB000793F25 /* HistorialCell.swift */,
+				3A4A501824084FCB00793F25 /* DiceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AD75B4324059AD900325264 = {
+			isa = PBXGroup;
+			children = (
+				3AD75B4E24059AD900325264 /* Diceroll */,
+				3AD75B6524059ADC00325264 /* DicerollTests */,
+				3AD75B4D24059AD900325264 /* Products */,
+				21E2997EAAB26E4983BEAB15 /* Pods */,
+				93C6084D9ED81613F0CA0B6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AD75B4D24059AD900325264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AD75B4C24059AD900325264 /* Diceroll.app */,
+				3AD75B6224059ADC00325264 /* DicerollTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD75B4E24059AD900325264 /* Diceroll */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A501524084B8500793F25 /* Views */,
+				3A4A501224084B3500793F25 /* Models */,
+				3AD75B712405AB4F00325264 /* TableManager.swift */,
+				3AD75B792405B01E00325264 /* Controllers */,
+				3AD75B4F24059AD900325264 /* AppDelegate.swift */,
+				3AD75B5124059AD900325264 /* SceneDelegate.swift */,
+				3AD75B5824059ADC00325264 /* Assets.xcassets */,
+				3AD75B5A24059ADC00325264 /* LaunchScreen.storyboard */,
+				3AD75B5D24059ADC00325264 /* Info.plist */,
+			);
+			path = Diceroll;
+			sourceTree = "<group>";
+		};
+		3AD75B6524059ADC00325264 /* DicerollTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD75B6624059ADC00325264 /* DicerollTests.swift */,
+				3AD75B6824059ADC00325264 /* Info.plist */,
+			);
+			path = DicerollTests;
+			sourceTree = "<group>";
+		};
+		3AD75B792405B01E00325264 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AD75B5324059AD900325264 /* ViewController.swift */,
+				3AD75B772405AFF500325264 /* HistoryViewController.swift */,
+				3AD75B752405AF6E00325264 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C6084D9ED81613F0CA0B6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F5FB6255AE993DD67FA5AB /* Pods_Diceroll.framework */,
+				09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AD75B4B24059AD900325264 /* Diceroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD75B6B24059ADC00325264 /* Build configuration list for PBXNativeTarget "Diceroll" */;
+			buildPhases = (
+				01AC05B7104D9094E046458B /* [CP] Check Pods Manifest.lock */,
+				3AD75B4824059AD900325264 /* Sources */,
+				3AD75B4924059AD900325264 /* Frameworks */,
+				3AD75B4A24059AD900325264 /* Resources */,
+				1DA5860252A6A9053B706C9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diceroll;
+			productName = Diceroll;
+			productReference = 3AD75B4C24059AD900325264 /* Diceroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AD75B6124059ADC00325264 /* DicerollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD75B6E24059ADC00325264 /* Build configuration list for PBXNativeTarget "DicerollTests" */;
+			buildPhases = (
+				DBE61715AE9D5C009EE6DBB5 /* [CP] Check Pods Manifest.lock */,
+				3AD75B5E24059ADC00325264 /* Sources */,
+				3AD75B5F24059ADC00325264 /* Frameworks */,
+				3AD75B6024059ADC00325264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD75B6424059ADC00325264 /* PBXTargetDependency */,
+			);
+			name = DicerollTests;
+			productName = DicerollTests;
+			productReference = 3AD75B6224059ADC00325264 /* DicerollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AD75B4424059AD900325264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Adrian Borlido";
+				TargetAttributes = {
+					3AD75B4B24059AD900325264 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3AD75B6124059ADC00325264 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3AD75B4B24059AD900325264;
+					};
+				};
+			};
+			buildConfigurationList = 3AD75B4724059AD900325264 /* Build configuration list for PBXProject "Diceroll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AD75B4324059AD900325264;
+			productRefGroup = 3AD75B4D24059AD900325264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AD75B4B24059AD900325264 /* Diceroll */,
+				3AD75B6124059ADC00325264 /* DicerollTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AD75B4A24059AD900325264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD75B5C24059ADC00325264 /* LaunchScreen.storyboard in Resources */,
+				3AD75B5924059ADC00325264 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD75B6024059ADC00325264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AC05B7104D9094E046458B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diceroll-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DA5860252A6A9053B706C9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diceroll/Pods-Diceroll-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diceroll/Pods-Diceroll-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diceroll/Pods-Diceroll-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE61715AE9D5C009EE6DBB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DicerollTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AD75B4824059AD900325264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD75B722405AB4F00325264 /* TableManager.swift in Sources */,
+				3A4A501924084FCB00793F25 /* DiceView.swift in Sources */,
+				3AD75B5424059AD900325264 /* ViewController.swift in Sources */,
+				3AD75B5024059AD900325264 /* AppDelegate.swift in Sources */,
+				3AD75B782405AFF500325264 /* HistoryViewController.swift in Sources */,
+				3A4A501424084B4200793F25 /* DiceThrow.swift in Sources */,
+				3A4A501724084BB000793F25 /* HistorialCell.swift in Sources */,
+				3AD75B762405AF6E00325264 /* TabBarController.swift in Sources */,
+				3AD75B5224059AD900325264 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD75B5E24059ADC00325264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD75B6724059ADC00325264 /* DicerollTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD75B6424059ADC00325264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AD75B4B24059AD900325264 /* Diceroll */;
+			targetProxy = 3AD75B6324059ADC00325264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AD75B5A24059ADC00325264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AD75B5B24059ADC00325264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AD75B6924059ADC00325264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AD75B6A24059ADC00325264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AD75B6C24059ADC00325264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204BC76C48E056E6846163BD /* Pods-Diceroll.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H6Q4SMC5M;
+				INFOPLIST_FILE = Diceroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borlido.Diceroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AD75B6D24059ADC00325264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946AC34257CD946675259DF7 /* Pods-Diceroll.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H6Q4SMC5M;
+				INFOPLIST_FILE = Diceroll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borlido.Diceroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3AD75B6F24059ADC00325264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02881CEA806E8DCC14FE80E4 /* Pods-DicerollTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H6Q4SMC5M;
+				INFOPLIST_FILE = DicerollTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borlido.DicerollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diceroll.app/Diceroll";
+			};
+			name = Debug;
+		};
+		3AD75B7024059ADC00325264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4947FF95BD3A5CCD07854A /* Pods-DicerollTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H6Q4SMC5M;
+				INFOPLIST_FILE = DicerollTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borlido.DicerollTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diceroll.app/Diceroll";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AD75B4724059AD900325264 /* Build configuration list for PBXProject "Diceroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD75B6924059ADC00325264 /* Debug */,
+				3AD75B6A24059ADC00325264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD75B6B24059ADC00325264 /* Build configuration list for PBXNativeTarget "Diceroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD75B6C24059ADC00325264 /* Debug */,
+				3AD75B6D24059ADC00325264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AD75B6E24059ADC00325264 /* Build configuration list for PBXNativeTarget "DicerollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD75B6F24059ADC00325264 /* Debug */,
+				3AD75B7024059ADC00325264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AD75B4424059AD900325264 /* Project object */;
+}
