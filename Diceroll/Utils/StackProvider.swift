@@ -1,5 +1,5 @@
 //
-//  DiceViewManager.swift
+//  StackProvider.swift
 //  Diceroll
 //
 //  Created by Adrian Borlido on 3/8/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiceViewProvider {
+class StackProvider {
     
     static func getDiceStack(target: Any, selector: Selector) -> UIStackView {
         

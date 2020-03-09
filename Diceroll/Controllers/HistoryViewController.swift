@@ -10,7 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController {
     let tableView = UITableView(frame: CGRect(), style: .grouped)
-    let tableManager = TableManager()
+    let tableManager = HistoryTableManager()
     var safeArea: UILayoutGuide!
 
     //ADD A CLEAR FUNCTION TO THE HISTORY

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A103CC02415AF830048AED7 /* DiceViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CBF2415AF830048AED7 /* DiceViewProvider.swift */; };
+		3A103CC02415AF830048AED7 /* StackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CBF2415AF830048AED7 /* StackProvider.swift */; };
 		3A103CC32415BE2D0048AED7 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CC22415BE2D0048AED7 /* HistoryManager.swift */; };
 		3A103CC52415CF260048AED7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CC42415CF260048AED7 /* DateFormatter.swift */; };
 		3A4A501424084B4200793F25 /* DiceRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A501324084B4200793F25 /* DiceRoll.swift */; };
@@ -19,9 +19,11 @@
 		3AD75B5924059ADC00325264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD75B5824059ADC00325264 /* Assets.xcassets */; };
 		3AD75B5C24059ADC00325264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD75B5A24059ADC00325264 /* LaunchScreen.storyboard */; };
 		3AD75B6724059ADC00325264 /* DicerollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B6624059ADC00325264 /* DicerollTests.swift */; };
-		3AD75B722405AB4F00325264 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B712405AB4F00325264 /* TableManager.swift */; };
+		3AD75B722405AB4F00325264 /* HistoryTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B712405AB4F00325264 /* HistoryTableManager.swift */; };
 		3AD75B762405AF6E00325264 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B752405AF6E00325264 /* TabBarController.swift */; };
 		3AD75B782405AFF500325264 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD75B772405AFF500325264 /* HistoryViewController.swift */; };
+		3AEF75C02416C738000B567C /* DiceViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF75BF2416C738000B567C /* DiceViewManager.swift */; };
+		3AEF75C32416CA58000B567C /* DiceViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF75C22416CA58000B567C /* DiceViewDelegate.swift */; };
 		470330F7F2B346E69C64E15E /* Pods_Diceroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F5FB6255AE993DD67FA5AB /* Pods_Diceroll.framework */; };
 		8E2BD6F71E0C30BF5C382836 /* Pods_DicerollTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,7 +43,7 @@
 		09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DicerollTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		204BC76C48E056E6846163BD /* Pods-Diceroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diceroll.debug.xcconfig"; path = "Target Support Files/Pods-Diceroll/Pods-Diceroll.debug.xcconfig"; sourceTree = "<group>"; };
 		2F4947FF95BD3A5CCD07854A /* Pods-DicerollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicerollTests.release.xcconfig"; path = "Target Support Files/Pods-DicerollTests/Pods-DicerollTests.release.xcconfig"; sourceTree = "<group>"; };
-		3A103CBF2415AF830048AED7 /* DiceViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewProvider.swift; sourceTree = "<group>"; };
+		3A103CBF2415AF830048AED7 /* StackProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProvider.swift; sourceTree = "<group>"; };
 		3A103CC22415BE2D0048AED7 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
 		3A103CC42415CF260048AED7 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		3A4A501324084B4200793F25 /* DiceRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRoll.swift; sourceTree = "<group>"; };
@@ -57,9 +59,11 @@
 		3AD75B6224059ADC00325264 /* DicerollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DicerollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD75B6624059ADC00325264 /* DicerollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicerollTests.swift; sourceTree = "<group>"; };
 		3AD75B6824059ADC00325264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AD75B712405AB4F00325264 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		3AD75B712405AB4F00325264 /* HistoryTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableManager.swift; sourceTree = "<group>"; };
 		3AD75B752405AF6E00325264 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3AD75B772405AFF500325264 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3AEF75BF2416C738000B567C /* DiceViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewManager.swift; sourceTree = "<group>"; };
+		3AEF75C22416CA58000B567C /* DiceViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewDelegate.swift; sourceTree = "<group>"; };
 		946AC34257CD946675259DF7 /* Pods-Diceroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diceroll.release.xcconfig"; path = "Target Support Files/Pods-Diceroll/Pods-Diceroll.release.xcconfig"; sourceTree = "<group>"; };
 		E1F5FB6255AE993DD67FA5AB /* Pods_Diceroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diceroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,7 +102,7 @@
 		3A103CBE2415AF340048AED7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3A103CBF2415AF830048AED7 /* DiceViewProvider.swift */,
+				3A103CBF2415AF830048AED7 /* StackProvider.swift */,
 				3A103CC42415CF260048AED7 /* DateFormatter.swift */,
 			);
 			path = Utils;
@@ -107,8 +111,9 @@
 		3A103CC12415B87A0048AED7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				3AD75B712405AB4F00325264 /* TableManager.swift */,
+				3AD75B712405AB4F00325264 /* HistoryTableManager.swift */,
 				3A103CC22415BE2D0048AED7 /* HistoryManager.swift */,
+				3AEF75BF2416C738000B567C /* DiceViewManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		3AD75B4E24059AD900325264 /* Diceroll */ = {
 			isa = PBXGroup;
 			children = (
+				3AEF75C12416C98D000B567C /* Protocols */,
 				3A103CC12415B87A0048AED7 /* Managers */,
 				3A103CBE2415AF340048AED7 /* Utils */,
 				3A4A501524084B8500793F25 /* Views */,
@@ -184,6 +190,14 @@
 				3AD75B752405AF6E00325264 /* TabBarController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AEF75C12416C98D000B567C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3AEF75C22416CA58000B567C /* DiceViewDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		93C6084D9ED81613F0CA0B6E /* Frameworks */ = {
@@ -382,15 +396,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A103CC52415CF260048AED7 /* DateFormatter.swift in Sources */,
-				3AD75B722405AB4F00325264 /* TableManager.swift in Sources */,
+				3AD75B722405AB4F00325264 /* HistoryTableManager.swift in Sources */,
 				3A4A501924084FCB00793F25 /* DiceView.swift in Sources */,
 				3AD75B5424059AD900325264 /* MainViewController.swift in Sources */,
-				3A103CC02415AF830048AED7 /* DiceViewProvider.swift in Sources */,
+				3A103CC02415AF830048AED7 /* StackProvider.swift in Sources */,
 				3AD75B5024059AD900325264 /* AppDelegate.swift in Sources */,
 				3AD75B782405AFF500325264 /* HistoryViewController.swift in Sources */,
 				3A4A501424084B4200793F25 /* DiceRoll.swift in Sources */,
+				3AEF75C32416CA58000B567C /* DiceViewDelegate.swift in Sources */,
 				3A4A501724084BB000793F25 /* RollHistoryCell.swift in Sources */,
 				3A103CC32415BE2D0048AED7 /* HistoryManager.swift in Sources */,
+				3AEF75C02416C738000B567C /* DiceViewManager.swift in Sources */,
 				3AD75B762405AF6E00325264 /* TabBarController.swift in Sources */,
 				3AD75B5224059AD900325264 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  TableManager.swift
+//  HistoryTableManager.swift
 //  Diceroll
 //
 //  Created by Adrian Borlido on 2/25/20.
@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class TableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
+class HistoryTableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         HistoryManager.shared.history.count
     }

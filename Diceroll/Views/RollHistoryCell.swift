@@ -1,5 +1,5 @@
 //
-//  HistorialCell.swift
+//  RollHistoryCell.swift
 //  Diceroll
 //
 //  Created by Adrian Borlido on 2/27/20.

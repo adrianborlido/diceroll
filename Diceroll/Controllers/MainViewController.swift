@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Diceroll
 //
 //  Created by Adrian Borlido on 2/25/20.
@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         view.backgroundColor = UIColor(named: "LightGray")
         
-        verticalStack = DiceViewProvider.getDiceStack(target: self, selector: #selector(rollTap))
+        verticalStack = StackProvider.getDiceStack(target: self, selector: #selector(rollTap))
         verticalStack.axis = .vertical
         verticalStack.distribution = .equalCentering
         verticalStack.translatesAutoresizingMaskIntoConstraints = false

@@ -1,5 +1,5 @@
 //
-//  DateFormatter.swift
+//  Formatter.swift
 //  Diceroll
 //
 //  Created by Adrian Borlido on 3/8/20.
