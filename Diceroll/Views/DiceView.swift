@@ -12,7 +12,7 @@ class DiceView: UIView {
     var lblDiceName: UILabel!
     let txtField = UITextField()
     let diceButton = UIButton()
-    var dice: Dice = .d20
+    var dice: Dice!
     
     init(dice: Dice, selector: Selector, target: Any) {
         super.init(frame: CGRect())
@@ -67,8 +67,8 @@ class DiceView: UIView {
             diceButton.heightAnchor.constraint(equalToConstant: 50),
             diceButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             txtField.topAnchor.constraint(equalTo: diceButton.bottomAnchor, constant: 5),
-            txtField.trailingAnchor.constraint(equalTo: trailingAnchor),
-            txtField.leadingAnchor.constraint(equalTo: leadingAnchor),
+            txtField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            txtField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             txtField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2.5),
             txtField.heightAnchor.constraint(equalToConstant: 20)
         ])
@@ -88,6 +88,8 @@ class DiceView: UIView {
             diceButton.tag = 12
         case .d20:
             diceButton.tag = 20
+        case .none:
+            diceButton.tag = 0
         }
     }
 }

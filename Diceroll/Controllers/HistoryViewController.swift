@@ -18,11 +18,11 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Throw History"
-        view.backgroundColor = UIColor(red:0.70, green:0.75, blue:0.76, alpha:1.0)
+        view.backgroundColor = UIColor(named: "LightGray")
         safeArea = view.layoutMarginsGuide
-        
+
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = UIColor(red:0.70, green:0.75, blue:0.76, alpha:1.0)
+        tableView.backgroundColor = UIColor(named: "LightGray")
         view.addSubview(tableView)
         tableView.delegate = tableManager
         tableView.dataSource = tableManager
@@ -34,7 +34,7 @@ class HistoryViewController: UIViewController {
         tableView.reloadData()
     }
     
-    private func constraintsInit(){
+    private func constraintsInit() {
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -43,4 +43,3 @@ class HistoryViewController: UIViewController {
         ])
     }
 }
-

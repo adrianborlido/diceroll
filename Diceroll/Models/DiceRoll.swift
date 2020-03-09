@@ -16,6 +16,8 @@ struct DiceRoll {
     var maxValue: Int
 }
 
+// swiftlint:disable variable_name
+
 enum Dice: String {
     case d4
     case d6
@@ -24,3 +26,5 @@ enum Dice: String {
     case d12
     case d20
 }
+
+// swiftlint:enable variable_name

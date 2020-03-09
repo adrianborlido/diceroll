@@ -8,10 +8,9 @@
 
 import Foundation
 
-
 class HistoryManager {
     static let shared = HistoryManager()
-    private init(){}
+    private init() {}
     
     var history = [DiceRoll]()
     

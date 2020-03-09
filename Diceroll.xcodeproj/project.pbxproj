@@ -207,6 +207,7 @@
 				3AD75B4924059AD900325264 /* Frameworks */,
 				3AD75B4A24059AD900325264 /* Resources */,
 				1DA5860252A6A9053B706C9C /* [CP] Embed Pods Frameworks */,
+				3AEF75BE2416B051000B567C /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -332,6 +333,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diceroll/Pods-Diceroll-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		3AEF75BE2416B051000B567C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		DBE61715AE9D5C009EE6DBB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

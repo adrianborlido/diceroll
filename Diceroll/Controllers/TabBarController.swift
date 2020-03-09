@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
         let tabBarItem1 = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         let tabBarItem2 = UITabBarItem(tabBarSystemItem: .history, tag: 1)
         
-        viewControllers![0].tabBarItem = tabBarItem1
-        viewControllers![1].tabBarItem = tabBarItem2
+        viewControllers?[0].tabBarItem = tabBarItem1
+        viewControllers?[1].tabBarItem = tabBarItem2
     }
 }

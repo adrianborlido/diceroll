@@ -18,9 +18,9 @@ class RollHistoryCell: UITableViewCell {
         imageView?.image = UIImage(named: diceRoll.dice.rawValue)
         
         if diceRoll.result == 1 {
-            backgroundColor = UIColor(red:0.98, green:0.69, blue:0.63, alpha:1.0)
+            backgroundColor = UIColor(named: "LightPink")
         }else if diceRoll.result == diceRoll.maxValue {
-            backgroundColor = UIColor(red:0.51, green:0.93, blue:0.93, alpha:1.0)
+            backgroundColor = UIColor(named: "LightBlue")
         }
     }
     

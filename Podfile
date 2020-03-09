@@ -7,6 +7,7 @@ target 'Diceroll' do
 
   # Pods for Diceroll
   pod 'PureLayout'
+  pod 'SwiftLint'
 
   target 'DicerollTests' do
     inherit! :search_paths

@@ -6,25 +6,37 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		29F477B426E97AC81C2D867965814EE7 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 811BB1F77DF1D26DA6D10E55C3F5FD77 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3099C9B73B007A873AB23BAEBCA38E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		29F477B426E97AC81C2D867965814EE7 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E32913FB8375CD19B376B8FFC99DFD12 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		331CE0F23493014F6028C749559151F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3FEA79AB938D263EDD0576109321847D /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B3F903FE080908C2AFBBA4932358FD /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		516464DB7004848131A1A280E725BB30 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A487CDB25B1CE53697EAA747710CE9 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FEA79AB938D263EDD0576109321847D /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C41BB561B106289F15D067B1D9BA8DA /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		516464DB7004848131A1A280E725BB30 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B088B074DA95DDFD16390EF7F617EB /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F84FC78E19CA332BD226E82C5F7866E /* Pods-DicerollTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC6DADD1196F075AED14428F37E93 /* Pods-DicerollTests-dummy.m */; };
-		7816220E2E5148D18522634860BECAF0 /* Pods-Diceroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F080F188BC83E457D84990CDB9F14E /* Pods-Diceroll-dummy.m */; };
+		61AE96C571E369EB5B70A4B1D91087A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		78FE3C6D7BF42669FF28E7A96BE6901C /* Pods-DicerollTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41AB7D998FD1BE34B43B53AE63FA1346 /* Pods-DicerollTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90E11860B6F9BDC73E00A1AF0116A0BA /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D077F2984229344A027CCB45BA10C7 /* ALView+PureLayout.m */; };
-		AE028A669BDCC596930B9CD7B34C231D /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B7801F2643CD9780A422D6F81DDB6B38 /* NSArray+PureLayout.m */; };
+		8B50F0043778C3E06AF0FE95892D7F51 /* Pods-Diceroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F080F188BC83E457D84990CDB9F14E /* Pods-Diceroll-dummy.m */; };
+		90E11860B6F9BDC73E00A1AF0116A0BA /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EA67119F98519960E5CA5676557B1CB8 /* ALView+PureLayout.m */; };
+		AE028A669BDCC596930B9CD7B34C231D /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C54ACA22A9D7891CFD13EF76CCF51 /* NSArray+PureLayout.m */; };
 		B45733DF72B8F6519ED2C771C8E252EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B556774885CCD9DA43BAF24F61194819 /* Pods-Diceroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 354988D421C42D07D28B1A861B7B3387 /* Pods-Diceroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C083E0C1A52728A974A958C249DFBFCC /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E7DAFC2B1EA86BE0453AB683FFE477 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAEF5A694258EA759B5AC90CBEB72CCC /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E6FA1730F0F90A1F1DC3C3FED080EF /* PureLayout-dummy.m */; };
-		CE4A4613E048E61DCDEB6B4C6AA5487E /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FE141AB17ED52030151AEBF0FC895A /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D64335AFA176E95D8A1892337EDB9819 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1780CED49928A7BE02DB6DD2C8FF83B1 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBF45D59546F58E4F8118B65DBC9B0F4 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DC49C411550EDCCD0D26568F143C53 /* NSLayoutConstraint+PureLayout.m */; };
-		EE3903AC92477CAE5D7295E0C04082C0 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F5F4272F4E425B8D3F5D40A63A5090 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C083E0C1A52728A974A958C249DFBFCC /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2909EF8D01B31E8050133712D6AE4EF9 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C783FDC5FDB4293A9130922D9792F8A4 /* Pods-Diceroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 354988D421C42D07D28B1A861B7B3387 /* Pods-Diceroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAEF5A694258EA759B5AC90CBEB72CCC /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BB627C6BFC13F0255949F4BDCFFFEC /* PureLayout-dummy.m */; };
+		CE4A4613E048E61DCDEB6B4C6AA5487E /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4A1002C9DD2036811E8301EECCC238 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D64335AFA176E95D8A1892337EDB9819 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 440550197ED711444E9BC6AF8CB0BB63 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBF45D59546F58E4F8118B65DBC9B0F4 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBE84191AF93BB4726133DC784CAB04 /* NSLayoutConstraint+PureLayout.m */; };
+		EE3903AC92477CAE5D7295E0C04082C0 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B80D6DEAF9AF8F66ED018B997F427C6E /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,69 +47,77 @@
 			remoteGlobalIDString = DCFFA827FF7C637F6666A93BE14CE2DB;
 			remoteInfo = "Pods-Diceroll";
 		};
-		988F9387DB8DDA5FB7F5F7CF57043785 /* PBXContainerItemProxy */ = {
+		AD00A6657443F52D61B51225B2982841 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06F5CDD6235E25837519792853B145A1;
 			remoteInfo = PureLayout;
 		};
+		C41E6476A383E02941C5D5730C5BBD65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		087B8EEE736ACDCB3F545F97F71AD90D /* Pods-Diceroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diceroll.release.xcconfig"; sourceTree = "<group>"; };
-		1780CED49928A7BE02DB6DD2C8FF83B1 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		1F4A1002C9DD2036811E8301EECCC238 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		1FDD5FFD2E4DBCD8F1CB5F98D702D6D9 /* Pods-DicerollTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DicerollTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		27F080F188BC83E457D84990CDB9F14E /* Pods-Diceroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Diceroll-dummy.m"; sourceTree = "<group>"; };
+		2909EF8D01B31E8050133712D6AE4EF9 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		2B98ED7978E02A3DDFBCB4728ADB6663 /* Pods-Diceroll-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Diceroll-acknowledgements.plist"; sourceTree = "<group>"; };
 		2C09E5FE5D94D652879CB0707CC634D0 /* Pods_Diceroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Diceroll.framework; path = "Pods-Diceroll.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D5C45F74FC9D66B099D0F53DEE1E575 /* PureLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PureLayout-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		354988D421C42D07D28B1A861B7B3387 /* Pods-Diceroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Diceroll-umbrella.h"; sourceTree = "<group>"; };
 		41AB7D998FD1BE34B43B53AE63FA1346 /* Pods-DicerollTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DicerollTests-umbrella.h"; sourceTree = "<group>"; };
-		41B3F903FE080908C2AFBBA4932358FD /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		440550197ED711444E9BC6AF8CB0BB63 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		510C54ACA22A9D7891CFD13EF76CCF51 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		5B5119F88BA1C1C481FD7894480E14B6 /* Pods_DicerollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DicerollTests.framework; path = "Pods-DicerollTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63D077F2984229344A027CCB45BA10C7 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		69E7DAFC2B1EA86BE0453AB683FFE477 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		61B9358D554AEC0D09E8178F51C18243 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		6C08EF2F0BFC1B6E7BE5C7E66094B062 /* Pods-DicerollTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DicerollTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C41BB561B106289F15D067B1D9BA8DA /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
 		75AD43D5B3FF8FF4E724C35A80A37202 /* Pods-DicerollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DicerollTests.debug.xcconfig"; sourceTree = "<group>"; };
-		77F5F4272F4E425B8D3F5D40A63A5090 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		792C96DA28E33172FD28BB8CF2A1D100 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
 		7D8FC6DADD1196F075AED14428F37E93 /* Pods-DicerollTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DicerollTests-dummy.m"; sourceTree = "<group>"; };
-		811BB1F77DF1D26DA6D10E55C3F5FD77 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		8414CAC76B55174BDF28B6D349B49C87 /* Pods-Diceroll-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Diceroll-frameworks.sh"; sourceTree = "<group>"; };
-		84A487CDB25B1CE53697EAA747710CE9 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		90FE141AB17ED52030151AEBF0FC895A /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		92A83FB6F2F212E66E8F74A0F2A4B12D /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		96E6FA1730F0F90A1F1DC3C3FED080EF /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		94B088B074DA95DDFD16390EF7F617EB /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A957A21A014A9608219E279E528C4B38 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		AAF52172E83D44F2B210970BD3E49080 /* Pods-DicerollTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DicerollTests.modulemap"; sourceTree = "<group>"; };
+		ABA070E0DF2328A2F8C97C2D08EE9F27 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		B0D69C8021322B32164CA33748D286F5 /* Pods-DicerollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DicerollTests.release.xcconfig"; sourceTree = "<group>"; };
-		B3C7508168F5BC89133319D9ABEC4940 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
-		B7801F2643CD9780A422D6F81DDB6B38 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		B80D6DEAF9AF8F66ED018B997F427C6E /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		B982748A5745CCB15B6C6AB3A7A456B8 /* Pods-Diceroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Diceroll.debug.xcconfig"; sourceTree = "<group>"; };
 		BDE4502FE4D0C98D896D0A7054DBF075 /* Pods-DicerollTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DicerollTests-Info.plist"; sourceTree = "<group>"; };
-		C9DC49C411550EDCCD0D26568F143C53 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		CB4F225838F0662C93A6A6D988A1F4ED /* Pods-Diceroll-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Diceroll-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CFA0E7E807BC8DB416F8839CB3952EA1 /* Pods-Diceroll-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Diceroll-Info.plist"; sourceTree = "<group>"; };
-		E13D84C33FEA93D48F3DD3E9BC246379 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		D4BB627C6BFC13F0255949F4BDCFFFEC /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		E32913FB8375CD19B376B8FFC99DFD12 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA67119F98519960E5CA5676557B1CB8 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		EBBE84191AF93BB4726133DC784CAB04 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		ED313EC1EB4FC6261140D61B0F83BB4A /* PureLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PureLayout-Info.plist"; sourceTree = "<group>"; };
 		FFF1665FF8F43833CACA21BB53684276 /* Pods-Diceroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Diceroll.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		027D55D6BDB88FDAB3720EBC83558F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AE96C571E369EB5B70A4B1D91087A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D428E24A60F2BB44F1E7F156C585784 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B45733DF72B8F6519ED2C771C8E252EE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2ACA518441A5DA14A71F54A59E84FB6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3099C9B73B007A873AB23BAEBCA38E10 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +132,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00AFB2DFE66525BC9654BC2CCEFF3771 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E13D84C33FEA93D48F3DD3E9BC246379 /* PureLayout.modulemap */,
-				B3C7508168F5BC89133319D9ABEC4940 /* PureLayout.xcconfig */,
-				96E6FA1730F0F90A1F1DC3C3FED080EF /* PureLayout-dummy.m */,
-				2D5C45F74FC9D66B099D0F53DEE1E575 /* PureLayout-Info.plist */,
-				92A83FB6F2F212E66E8F74A0F2A4B12D /* PureLayout-prefix.pch */,
-				1780CED49928A7BE02DB6DD2C8FF83B1 /* PureLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
-			sourceTree = "<group>";
-		};
 		00E0D6A5A30C97C461A5E691959F8526 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +141,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		04A2C822144CEC05EB5AD23AE0036229 /* Pods */ = {
+		16F5EC27D77C824D208503D8A00E5D9F /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				BF2FF4972F080563CE79463332DE8C90 /* PureLayout */,
+				80207E1CF23E84367AB81F2F2BCA4CC2 /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		39CC07E9923A08F473955353F78CEAD3 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B80D6DEAF9AF8F66ED018B997F427C6E /* ALView+PureLayout.h */,
+				EA67119F98519960E5CA5676557B1CB8 /* ALView+PureLayout.m */,
+				6C41BB561B106289F15D067B1D9BA8DA /* NSArray+PureLayout.h */,
+				510C54ACA22A9D7891CFD13EF76CCF51 /* NSArray+PureLayout.m */,
+				94B088B074DA95DDFD16390EF7F617EB /* NSLayoutConstraint+PureLayout.h */,
+				EBBE84191AF93BB4726133DC784CAB04 /* NSLayoutConstraint+PureLayout.m */,
+				E32913FB8375CD19B376B8FFC99DFD12 /* PureLayout.h */,
+				2909EF8D01B31E8050133712D6AE4EF9 /* PureLayout+Internal.h */,
+				1F4A1002C9DD2036811E8301EECCC238 /* PureLayoutDefines.h */,
+				C53ACB8EB474EF670F1C4AD468FEDCCA /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
 		78593C0DCDCA9F04ADE1A1B4FAE50ED1 /* Products */ = {
@@ -151,6 +176,15 @@
 				E4E7B3DD46ABB0DBBB56BD5AE90E4911 /* PureLayout.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		80207E1CF23E84367AB81F2F2BCA4CC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				792C96DA28E33172FD28BB8CF2A1D100 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
 		96629141D553ED3F75A180D82839C62F /* Pods-DicerollTests */ = {
@@ -169,22 +203,13 @@
 			path = "Target Support Files/Pods-DicerollTests";
 			sourceTree = "<group>";
 		};
-		BF2FF4972F080563CE79463332DE8C90 /* PureLayout */ = {
+		A02A9D79AB6D402D62AA5179635DFB6F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				77F5F4272F4E425B8D3F5D40A63A5090 /* ALView+PureLayout.h */,
-				63D077F2984229344A027CCB45BA10C7 /* ALView+PureLayout.m */,
-				41B3F903FE080908C2AFBBA4932358FD /* NSArray+PureLayout.h */,
-				B7801F2643CD9780A422D6F81DDB6B38 /* NSArray+PureLayout.m */,
-				84A487CDB25B1CE53697EAA747710CE9 /* NSLayoutConstraint+PureLayout.h */,
-				C9DC49C411550EDCCD0D26568F143C53 /* NSLayoutConstraint+PureLayout.m */,
-				811BB1F77DF1D26DA6D10E55C3F5FD77 /* PureLayout.h */,
-				69E7DAFC2B1EA86BE0453AB683FFE477 /* PureLayout+Internal.h */,
-				90FE141AB17ED52030151AEBF0FC895A /* PureLayoutDefines.h */,
-				00AFB2DFE66525BC9654BC2CCEFF3771 /* Support Files */,
+				39CC07E9923A08F473955353F78CEAD3 /* PureLayout */,
+				16F5EC27D77C824D208503D8A00E5D9F /* SwiftLint */,
 			);
-			name = PureLayout;
-			path = PureLayout;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -195,12 +220,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C53ACB8EB474EF670F1C4AD468FEDCCA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A957A21A014A9608219E279E528C4B38 /* PureLayout.modulemap */,
+				ABA070E0DF2328A2F8C97C2D08EE9F27 /* PureLayout.xcconfig */,
+				D4BB627C6BFC13F0255949F4BDCFFFEC /* PureLayout-dummy.m */,
+				ED313EC1EB4FC6261140D61B0F83BB4A /* PureLayout-Info.plist */,
+				61B9358D554AEC0D09E8178F51C18243 /* PureLayout-prefix.pch */,
+				440550197ED711444E9BC6AF8CB0BB63 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				04A2C822144CEC05EB5AD23AE0036229 /* Pods */,
+				A02A9D79AB6D402D62AA5179635DFB6F /* Pods */,
 				78593C0DCDCA9F04ADE1A1B4FAE50ED1 /* Products */,
 				00E0D6A5A30C97C461A5E691959F8526 /* Targets Support Files */,
 			);
@@ -256,11 +295,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3C3BDE8C92D26EF02B16CA883112C2E /* Headers */ = {
+		DA6C5F879F380DE158785DDA3613DB27 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B556774885CCD9DA43BAF24F61194819 /* Pods-Diceroll-umbrella.h in Headers */,
+				C783FDC5FDB4293A9130922D9792F8A4 /* Pods-Diceroll-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,17 +345,18 @@
 		};
 		DCFFA827FF7C637F6666A93BE14CE2DB /* Pods-Diceroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67D88B9BF30ABBD1394025267E857E09 /* Build configuration list for PBXNativeTarget "Pods-Diceroll" */;
+			buildConfigurationList = 15917A5B147CC1FA9AE7E3B3D9D617FE /* Build configuration list for PBXNativeTarget "Pods-Diceroll" */;
 			buildPhases = (
-				D3C3BDE8C92D26EF02B16CA883112C2E /* Headers */,
-				528F581C221A787609A016287D177662 /* Sources */,
-				2ACA518441A5DA14A71F54A59E84FB6C /* Frameworks */,
-				1164648AA6D268F66C31D939A683F933 /* Resources */,
+				DA6C5F879F380DE158785DDA3613DB27 /* Headers */,
+				6FDFA33CF4093F356D1BEBCAFF87C03A /* Sources */,
+				027D55D6BDB88FDAB3720EBC83558F9A /* Frameworks */,
+				57443261C1B4CDA448ED89BAD834AA13 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1CDB3B6B17708C8CEBDC37FE1A7E8EB8 /* PBXTargetDependency */,
+				DD6906D75C7585C818E7085AAED51358 /* PBXTargetDependency */,
+				BDEDCE5F906537189A7564247677A584 /* PBXTargetDependency */,
 			);
 			name = "Pods-Diceroll";
 			productName = "Pods-Diceroll";
@@ -348,19 +388,20 @@
 				DCFFA827FF7C637F6666A93BE14CE2DB /* Pods-Diceroll */,
 				161B9C36618B6504D2C831C2D4958D62 /* Pods-DicerollTests */,
 				06F5CDD6235E25837519792853B145A1 /* PureLayout */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1164648AA6D268F66C31D939A683F933 /* Resources */ = {
+		25FE00F80C3C3BEA797D20BEABD1B50A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25FE00F80C3C3BEA797D20BEABD1B50A /* Resources */ = {
+		57443261C1B4CDA448ED89BAD834AA13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,11 +418,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		528F581C221A787609A016287D177662 /* Sources */ = {
+		6FDFA33CF4093F356D1BEBCAFF87C03A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7816220E2E5148D18522634860BECAF0 /* Pods-Diceroll-dummy.m in Sources */,
+				8B50F0043778C3E06AF0FE95892D7F51 /* Pods-Diceroll-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,17 +448,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CDB3B6B17708C8CEBDC37FE1A7E8EB8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = 06F5CDD6235E25837519792853B145A1 /* PureLayout */;
-			targetProxy = 988F9387DB8DDA5FB7F5F7CF57043785 /* PBXContainerItemProxy */;
-		};
 		76503A7C07FF730363A72A0EC1CB4AAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Diceroll";
 			target = DCFFA827FF7C637F6666A93BE14CE2DB /* Pods-Diceroll */;
 			targetProxy = 47A96B635DA82D7AD3DE9A4580F8E65A /* PBXContainerItemProxy */;
+		};
+		BDEDCE5F906537189A7564247677A584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = C41E6476A383E02941C5D5730C5BBD65 /* PBXContainerItemProxy */;
+		};
+		DD6906D75C7585C818E7085AAED51358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 06F5CDD6235E25837519792853B145A1 /* PureLayout */;
+			targetProxy = AD00A6657443F52D61B51225B2982841 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,7 +570,7 @@
 		};
 		6E81FC164009D20402ED16D64D34969F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C7508168F5BC89133319D9ABEC4940 /* PureLayout.xcconfig */;
+			baseConfigurationReference = ABA070E0DF2328A2F8C97C2D08EE9F27 /* PureLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -557,9 +604,26 @@
 			};
 			name = Release;
 		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792C96DA28E33172FD28BB8CF2A1D100 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9B1F12A2E1AFF5E58C70F3669E787655 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C7508168F5BC89133319D9ABEC4940 /* PureLayout.xcconfig */;
+			baseConfigurationReference = ABA070E0DF2328A2F8C97C2D08EE9F27 /* PureLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -630,7 +694,7 @@
 			};
 			name = Debug;
 		};
-		BE44378F434587B48BE95865D9457007 /* Release */ = {
+		C58D876DAE988B289B62D91A9ABA4E8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 087B8EEE736ACDCB3F545F97F71AD90D /* Pods-Diceroll.release.xcconfig */;
 			buildSettings = {
@@ -668,6 +732,60 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		D7CCA1FD3BBE60D7BB0E74983C69E751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B982748A5745CCB15B6C6AB3A7A456B8 /* Pods-Diceroll.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Diceroll/Pods-Diceroll-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Diceroll/Pods-Diceroll.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792C96DA28E33172FD28BB8CF2A1D100 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -733,44 +851,6 @@
 			};
 			name = Debug;
 		};
-		F1AAD14B401CCD7BE7FB7F103113A824 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B982748A5745CCB15B6C6AB3A7A456B8 /* Pods-Diceroll.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Diceroll/Pods-Diceroll-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Diceroll/Pods-Diceroll.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -779,6 +859,15 @@
 			buildConfigurations = (
 				B7F9C96A9E393E2F0B3CC6719A47F1BB /* Debug */,
 				5ECD33970D45A37BF505508597A66F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15917A5B147CC1FA9AE7E3B3D9D617FE /* Build configuration list for PBXNativeTarget "Pods-Diceroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7CCA1FD3BBE60D7BB0E74983C69E751 /* Debug */,
+				C58D876DAE988B289B62D91A9ABA4E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -792,20 +881,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67D88B9BF30ABBD1394025267E857E09 /* Build configuration list for PBXNativeTarget "Pods-Diceroll" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1AAD14B401CCD7BE7FB7F103113A824 /* Debug */,
-				BE44378F434587B48BE95865D9457007 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		97C7148CC41A8E2AE2997FBA410BDDCE /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B1F12A2E1AFF5E58C70F3669E787655 /* Debug */,
 				6E81FC164009D20402ED16D64D34969F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEED47E09AF743F48544C1C4FEADEF47 /* Debug */,
+				84D7C4574E8F0F3095623F0E06F5B402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

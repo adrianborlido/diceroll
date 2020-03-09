@@ -14,14 +14,13 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupView()
         constraintsInit()
     }
-    
+
     private func setupView() {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-        view.backgroundColor = UIColor(red:0.70, green:0.75, blue:0.76, alpha:1.0)
+        view.backgroundColor = UIColor(named: "LightGray")
         
         verticalStack = DiceViewProvider.getDiceStack(target: self, selector: #selector(rollTap))
         verticalStack.axis = .vertical
@@ -30,7 +29,7 @@ class MainViewController: UIViewController {
         
         lblResult = UILabel()
         lblResult.translatesAutoresizingMaskIntoConstraints = false
-        lblResult.text = "THE RESULT OF THE THROW"
+        lblResult.text = "RESULT"
         
         view.addSubview(verticalStack)
         view.addSubview(lblResult)
@@ -46,20 +45,25 @@ class MainViewController: UIViewController {
             lblResult.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
-    
+}
+
+extension MainViewController {
+
     @objc private func rollTap(sender: UIButton) {
         let value = Int.random(in: 1...sender.tag)
-        
+
         lblResult.text = value.description
-        
+
+        // USER ALERT TO DISPLAY RESULT?
+
         if value == 1 {
             lblResult.textColor = .red
         }else if value == sender.tag {
             lblResult.textColor = .blue
-        }else{
+        }else {
             lblResult.textColor = .black
         }
-        
-        HistoryManager.shared.history.append(DiceRoll(date: Date(), dice: Dice(rawValue: "d\(sender.tag)")!, result: value, quantity: 1, maxValue: sender.tag))
+
+        HistoryManager.shared.history.append(DiceRoll(date: Date(), dice: Dice(rawValue: "d\(sender.tag)") ?? .d20, result: value, quantity: 1, maxValue: sender.tag))
     }
 }

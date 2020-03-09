@@ -15,7 +15,7 @@ class Formatter {
         return formatter
     }
     
-    func formatDate(_ date: Date) -> String{
+    func formatDate(_ date: Date) -> String {
         return dateformatter.string(from: date)
     }
 }
