@@ -13,6 +13,7 @@ struct DiceRoll {
     var dice: Dice
     var result: Int
     var quantity: Int
+    var maxValue: Int
 }
 
 enum Dice: String {

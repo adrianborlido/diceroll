@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     var verticalStack: UIStackView!
     var lblResult: UILabel!
     
@@ -48,14 +48,18 @@ class ViewController: UIViewController {
     }
     
     @objc private func rollTap(sender: UIButton) {
-        lblResult.text = Int.random(in: 1...sender.tag).description
+        let value = Int.random(in: 1...sender.tag)
         
-        if lblResult.text == "1" {
+        lblResult.text = value.description
+        
+        if value == 1 {
             lblResult.textColor = .red
-        }else if lblResult.text == sender.tag.description {
+        }else if value == sender.tag {
             lblResult.textColor = .blue
         }else{
             lblResult.textColor = .black
         }
+        
+        HistoryManager.shared.history.append(DiceRoll(date: Date(), dice: Dice(rawValue: "d\(sender.tag)")!, result: value, quantity: 1, maxValue: sender.tag))
     }
 }

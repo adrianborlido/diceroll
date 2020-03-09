@@ -13,17 +13,25 @@ class HistoryViewController: UIViewController {
     let tableManager = TableManager()
     var safeArea: UILayoutGuide!
 
+    //ADD A CLEAR FUNCTION TO THE HISTORY
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Roll History"
-        view.backgroundColor = UIColor(red:0.87, green:0.90, blue:0.91, alpha:1.0)
+        title = "Throw History"
+        view.backgroundColor = UIColor(red:0.70, green:0.75, blue:0.76, alpha:1.0)
         safeArea = view.layoutMarginsGuide
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor(red:0.70, green:0.75, blue:0.76, alpha:1.0)
         view.addSubview(tableView)
         tableView.delegate = tableManager
         tableView.dataSource = tableManager
+        
         constraintsInit()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     private func constraintsInit(){

@@ -11,12 +11,10 @@ import UIKit
 
 class TableManager: NSObject, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        HistoryManager.shared.history.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "SOME PREVIOUS RESULT: \(indexPath.row)"
-        return cell
+        return RollHistoryCell(diceRoll: HistoryManager.shared.history[indexPath.row])
     }
 }
