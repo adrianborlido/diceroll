@@ -12,7 +12,10 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = [MainViewController(), HistoryViewController()]
+        
+        let historyNavigationController = UINavigationController(rootViewController: HistoryViewController())
+        
+        viewControllers = [MainViewController(), historyNavigationController]
         
         let tabBarItem1 = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         let tabBarItem2 = UITabBarItem(tabBarSystemItem: .history, tag: 1)

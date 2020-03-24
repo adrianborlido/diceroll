@@ -13,8 +13,11 @@ class HistoryManager {
     private init() {}
     
     var history = [DiceRoll]()
+    var sortedHistory: [DiceRoll] {
+        return history.sorted(by: {$0.date > $1.date})
+    }
     
-    func clearHistory() {
+    @objc func clearHistory() {
         history = [DiceRoll]()
     }
 }

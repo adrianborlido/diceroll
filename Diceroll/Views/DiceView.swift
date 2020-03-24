@@ -36,7 +36,7 @@ class DiceView: UIView {
         
         lblDiceName = UILabel()
         lblDiceName.text = dice.rawValue
-        lblDiceName.font = lblDiceName.font.withSize(12)
+        lblDiceName.font = lblDiceName.font.withSize(14)
         
         setupTags()
         diceButton.setImage(UIImage(named: dice.rawValue), for: .normal)
@@ -75,28 +75,32 @@ class DiceView: UIView {
     }
     
     private func setupTags() {
+        var value: Int = 0
+        
         switch dice {
+        case .d2:
+            value = 2
+        case .d3:
+            value = 3
         case .d4:
-            diceButton.tag = 4
-            txtField.tag = 4
+            value = 4
         case .d6:
-            diceButton.tag = 6
-            txtField.tag = 6
+            value = 6
         case .d8:
-            diceButton.tag = 8
-            txtField.tag = 8
+            value = 8
         case .d10:
-            diceButton.tag = 10
-            txtField.tag = 10
+            value = 10
         case .d12:
-            diceButton.tag = 12
-            txtField.tag = 12
+            value = 12
         case .d20:
-            diceButton.tag = 20
-            txtField.tag = 20
+            value = 20
+        case .d100:
+            value = 100
         case .none:
-            diceButton.tag = 0
-            txtField.tag = 0
+            value = 0
         }
+        
+        diceButton.tag = value
+        txtField.tag = value
     }
 }

@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
     private func constraintsInit() {
         NSLayoutConstraint.activate([
             verticalStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            verticalStack.heightAnchor.constraint(equalToConstant: 210),
+            verticalStack.heightAnchor.constraint(equalToConstant: 330),
             verticalStack.widthAnchor.constraint(equalToConstant: 330),
             verticalStack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             lblResult.topAnchor.constraint(equalTo: verticalStack.bottomAnchor, constant: 50),
@@ -63,7 +63,8 @@ extension MainViewController {
         }else {
             lblResult.textColor = .black
         }
-
-        HistoryManager.shared.history.append(DiceRoll(date: Date(), dice: Dice(rawValue: "d\(sender.tag)") ?? .d20, result: value, quantity: 1, maxValue: sender.tag))
+        
+        let diceRoll = DiceRoll(date: Date(), dice: Dice(rawValue: "d\(sender.tag)") ?? .d20, result: value, quantity: 1, maxValue: sender.tag)
+        HistoryManager.shared.history.append(diceRoll)
     }
 }

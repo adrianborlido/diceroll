@@ -19,12 +19,15 @@ struct DiceRoll {
 // swiftlint:disable variable_name
 
 enum Dice: String {
+    case d2
+    case d3
     case d4
     case d6
     case d8
     case d10
     case d12
     case d20
+    case d100
 }
 
 // swiftlint:enable variable_name

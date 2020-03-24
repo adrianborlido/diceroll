@@ -12,7 +12,7 @@ class RollHistoryCell: UITableViewCell {
     
     init(diceRoll: DiceRoll) {
         super.init(style: .subtitle, reuseIdentifier: "cell")
-        
+        selectionStyle = .none
         textLabel?.text = "Result: \(diceRoll.result)"
         detailTextLabel?.text = "Date: \(Formatter().formatDate(diceRoll.date))"
         imageView?.image = UIImage(named: diceRoll.dice.rawValue)

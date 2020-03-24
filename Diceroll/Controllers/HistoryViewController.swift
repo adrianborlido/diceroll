@@ -11,7 +11,6 @@ import UIKit
 class HistoryViewController: UIViewController {
     let tableView = UITableView(frame: CGRect(), style: .grouped)
     let tableManager = HistoryTableManager()
-    var safeArea: UILayoutGuide!
 
     //ADD A CLEAR FUNCTION TO THE HISTORY
     
@@ -19,13 +18,15 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         title = "Throw History"
         view.backgroundColor = UIColor(named: "LightGray")
-        safeArea = view.layoutMarginsGuide
 
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = UIColor(named: "LightGray")
-        view.addSubview(tableView)
         tableView.delegate = tableManager
         tableView.dataSource = tableManager
+        
+        view.addSubview(tableView)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Clear", style: .done, target: self, action: #selector(clearHistory))
         
         constraintsInit()
     }
@@ -39,7 +40,12 @@ class HistoryViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            tableView.topAnchor.constraint(equalTo: safeArea.topAnchor)
+            tableView.topAnchor.constraint(equalTo: view.topAnchor)
         ])
+    }
+    
+    @objc func clearHistory() {
+        HistoryManager.shared.clearHistory()
+        tableView.reloadData()
     }
 }
