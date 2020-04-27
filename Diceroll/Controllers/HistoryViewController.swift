@@ -11,8 +11,6 @@ import UIKit
 class HistoryViewController: UIViewController {
     let tableView = UITableView(frame: CGRect(), style: .grouped)
     let tableManager = HistoryTableManager()
-
-    //ADD A CLEAR FUNCTION TO THE HISTORY
     
     override func viewDidLoad() {
         super.viewDidLoad()

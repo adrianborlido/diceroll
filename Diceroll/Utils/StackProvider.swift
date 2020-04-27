@@ -16,12 +16,12 @@ class StackProvider {
                                                         DiceView(dice: .d4, selector: selector, target: target)])
         
         let secondStack = UIStackView(arrangedSubviews: [DiceView(dice: .d6, selector: selector, target: target),
-                                                        DiceView(dice: .d8, selector: selector, target: target),
-                                                        DiceView(dice: .d10, selector: selector, target: target)])
+                                                         DiceView(dice: .d8, selector: selector, target: target),
+                                                         DiceView(dice: .d10, selector: selector, target: target)])
         
         let thirdStack = UIStackView(arrangedSubviews: [DiceView(dice: .d12, selector: selector, target: target),
-                                                         DiceView(dice: .d20, selector: selector, target: target),
-                                                         DiceView(dice: .d100, selector: selector, target: target)])
+                                                        DiceView(dice: .d20, selector: selector, target: target),
+                                                        DiceView(dice: .d100, selector: selector, target: target)])
         
         firstStack.distribution = .equalCentering
         secondStack.distribution = .equalCentering

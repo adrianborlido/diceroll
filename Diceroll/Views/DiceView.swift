@@ -10,8 +10,9 @@ import UIKit
 
 class DiceView: UIView {
     var lblDiceName: UILabel!
-    let txtField = UITextField()
+//    let txtField = UITextField()
     let diceButton = UIButton()
+    let amountSelectionView = AmountSelectionView()
     var dice: Dice!
     
     init(dice: Dice, selector: Selector, target: Any) {
@@ -23,10 +24,6 @@ class DiceView: UIView {
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
     
     private func setupView() {
@@ -41,17 +38,19 @@ class DiceView: UIView {
         setupTags()
         diceButton.setImage(UIImage(named: dice.rawValue), for: .normal)
         
-        txtField.placeholder = "0"
-        txtField.textAlignment = .center
-        txtField.keyboardType = .numberPad
+//        txtField.placeholder = "0"
+//        txtField.textAlignment = .center
+//        txtField.keyboardType = .numberPad
         
+        amountSelectionView.translatesAutoresizingMaskIntoConstraints = false
         lblDiceName.translatesAutoresizingMaskIntoConstraints = false
         diceButton.translatesAutoresizingMaskIntoConstraints = false
-        txtField.translatesAutoresizingMaskIntoConstraints = false
+//        txtField.translatesAutoresizingMaskIntoConstraints = false
         
+        addSubview(amountSelectionView)
         addSubview(lblDiceName)
         addSubview(diceButton)
-        addSubview(txtField)
+//        addSubview(txtField)
         
         constraintsInit()
     }
@@ -66,11 +65,11 @@ class DiceView: UIView {
             diceButton.widthAnchor.constraint(equalToConstant: 50),
             diceButton.heightAnchor.constraint(equalToConstant: 50),
             diceButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            txtField.topAnchor.constraint(equalTo: diceButton.bottomAnchor, constant: 5),
-            txtField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
-            txtField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-            txtField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2.5),
-            txtField.heightAnchor.constraint(equalToConstant: 20)
+            amountSelectionView.topAnchor.constraint(equalTo: diceButton.bottomAnchor, constant: 5),
+            amountSelectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            amountSelectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
+            amountSelectionView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -2.5),
+            amountSelectionView.heightAnchor.constraint(equalToConstant: 25)
         ])
     }
     
@@ -101,6 +100,6 @@ class DiceView: UIView {
         }
         
         diceButton.tag = value
-        txtField.tag = value
+        amountSelectionView.textField.tag = value
     }
 }

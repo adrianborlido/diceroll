@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		096C4EA4242A90F10046CD37 /* QuantitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C4EA3242A90F10046CD37 /* QuantitySelectionView.swift */; };
+		096C4EA4242A90F10046CD37 /* AmountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096C4EA3242A90F10046CD37 /* AmountSelectionView.swift */; };
 		3A103CC02415AF830048AED7 /* StackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CBF2415AF830048AED7 /* StackProvider.swift */; };
 		3A103CC32415BE2D0048AED7 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CC22415BE2D0048AED7 /* HistoryManager.swift */; };
 		3A103CC52415CF260048AED7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A103CC42415CF260048AED7 /* DateFormatter.swift */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		02881CEA806E8DCC14FE80E4 /* Pods-DicerollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicerollTests.debug.xcconfig"; path = "Target Support Files/Pods-DicerollTests/Pods-DicerollTests.debug.xcconfig"; sourceTree = "<group>"; };
-		096C4EA3242A90F10046CD37 /* QuantitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelectionView.swift; sourceTree = "<group>"; };
+		096C4EA3242A90F10046CD37 /* AmountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountSelectionView.swift; sourceTree = "<group>"; };
 		09DD398FC2208D0E84DC2E47 /* Pods_DicerollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DicerollTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		204BC76C48E056E6846163BD /* Pods-Diceroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diceroll.debug.xcconfig"; path = "Target Support Files/Pods-Diceroll/Pods-Diceroll.debug.xcconfig"; sourceTree = "<group>"; };
 		2F4947FF95BD3A5CCD07854A /* Pods-DicerollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicerollTests.release.xcconfig"; path = "Target Support Files/Pods-DicerollTests/Pods-DicerollTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			children = (
 				3A4A501624084BB000793F25 /* RollHistoryCell.swift */,
 				3A4A501824084FCB00793F25 /* DiceView.swift */,
-				096C4EA3242A90F10046CD37 /* QuantitySelectionView.swift */,
+				096C4EA3242A90F10046CD37 /* AmountSelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				3AD75B782405AFF500325264 /* HistoryViewController.swift in Sources */,
 				3A4A501424084B4200793F25 /* DiceRoll.swift in Sources */,
 				3AEF75C32416CA58000B567C /* DiceViewDelegate.swift in Sources */,
-				096C4EA4242A90F10046CD37 /* QuantitySelectionView.swift in Sources */,
+				096C4EA4242A90F10046CD37 /* AmountSelectionView.swift in Sources */,
 				3A4A501724084BB000793F25 /* RollHistoryCell.swift in Sources */,
 				3A103CC32415BE2D0048AED7 /* HistoryManager.swift in Sources */,
 				3AEF75C02416C738000B567C /* DiceViewManager.swift in Sources */,
